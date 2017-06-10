@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
-using System.IO;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 
 namespace TextureConverter
 {
@@ -20,7 +16,7 @@ namespace TextureConverter
             info.UseShellExecute = true;
             info.WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-            string VTFCmd = Path.Combine(info.WorkingDirectory, "vtflib", "VTFCmd.exe");
+            string VTFCmd = Path.Combine(info.WorkingDirectory, Path.Combine("vtflib", "VTFCmd.exe"));
             string output = Path.Combine(info.WorkingDirectory, "temp");
 
             info.FileName = "cmd"; info.Arguments = "/C " + VTFCmd + " -file \"" + files[0] + "\" -output \"" + output + "\" -exportformat \"png\"";
