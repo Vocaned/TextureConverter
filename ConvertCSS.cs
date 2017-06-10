@@ -58,6 +58,7 @@ namespace TextureConverter
 
                 outp.Save(output);
                 Logger("Saved skybox to " + output);
+                if(Form1.alwaysLog) File.AppendAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logs.txt"), logs);
                 outp.Dispose();
                 return true;
 

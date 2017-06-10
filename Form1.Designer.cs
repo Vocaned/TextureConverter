@@ -30,6 +30,10 @@
             this.monoFlat_ThemeContainer1 = new MonoFlat.MonoFlat_ThemeContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Main = new System.Windows.Forms.TabPage();
+            this.monoFlat_HeaderLabel2 = new MonoFlat.MonoFlat_HeaderLabel();
+            this.monoFlat_SocialButton1 = new MonoFlat.MonoFlat_SocialButton();
+            this.monoFlat_SocialButton2 = new MonoFlat.MonoFlat_SocialButton();
+            this.monoFlat_HeaderLabel1 = new MonoFlat.MonoFlat_HeaderLabel();
             this.monoFlat_Button10 = new MonoFlat.MonoFlat_Button();
             this.monoFlat_Button1 = new MonoFlat.MonoFlat_Button();
             this.SkyboxAdv = new System.Windows.Forms.TabPage();
@@ -61,7 +65,6 @@
             this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog5 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog6 = new System.Windows.Forms.OpenFileDialog();
-            this.monoFlat_SocialButton1 = new MonoFlat.MonoFlat_SocialButton();
             this.monoFlat_ThemeContainer1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
@@ -99,13 +102,63 @@
             // Main
             // 
             this.Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.Main.Controls.Add(this.monoFlat_HeaderLabel2);
             this.Main.Controls.Add(this.monoFlat_SocialButton1);
+            this.Main.Controls.Add(this.monoFlat_SocialButton2);
+            this.Main.Controls.Add(this.monoFlat_HeaderLabel1);
             this.Main.Controls.Add(this.monoFlat_Button10);
             this.Main.Controls.Add(this.monoFlat_Button1);
             this.Main.Location = new System.Drawing.Point(4, 24);
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(735, 412);
             this.Main.TabIndex = 1;
+            // 
+            // monoFlat_HeaderLabel2
+            // 
+            this.monoFlat_HeaderLabel2.AutoSize = true;
+            this.monoFlat_HeaderLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_HeaderLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.monoFlat_HeaderLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.monoFlat_HeaderLabel2.Location = new System.Drawing.Point(567, 45);
+            this.monoFlat_HeaderLabel2.Name = "monoFlat_HeaderLabel2";
+            this.monoFlat_HeaderLabel2.Size = new System.Drawing.Size(57, 20);
+            this.monoFlat_HeaderLabel2.TabIndex = 5;
+            this.monoFlat_HeaderLabel2.Text = "Github";
+            this.monoFlat_HeaderLabel2.Click += new System.EventHandler(this.monoFlat_HeaderLabel2_Click);
+            // 
+            // monoFlat_SocialButton1
+            // 
+            this.monoFlat_SocialButton1.BackColor = System.Drawing.Color.Black;
+            this.monoFlat_SocialButton1.Image = global::TextureConverter.Properties.Resources.GitHub_Mark_Light_64px;
+            this.monoFlat_SocialButton1.Location = new System.Drawing.Point(630, 13);
+            this.monoFlat_SocialButton1.Name = "monoFlat_SocialButton1";
+            this.monoFlat_SocialButton1.Size = new System.Drawing.Size(85, 85);
+            this.monoFlat_SocialButton1.TabIndex = 2;
+            this.monoFlat_SocialButton1.Text = "monoFlat_SocialButton1";
+            this.monoFlat_SocialButton1.Click += new System.EventHandler(this.monoFlat_SocialButton1_Click);
+            // 
+            // monoFlat_SocialButton2
+            // 
+            this.monoFlat_SocialButton2.Image = global::TextureConverter.Properties.Resources.Settings;
+            this.monoFlat_SocialButton2.Location = new System.Drawing.Point(114, 13);
+            this.monoFlat_SocialButton2.Name = "monoFlat_SocialButton2";
+            this.monoFlat_SocialButton2.Size = new System.Drawing.Size(85, 85);
+            this.monoFlat_SocialButton2.TabIndex = 6;
+            this.monoFlat_SocialButton2.Text = "monoFlat_SocialButton2";
+            this.monoFlat_SocialButton2.Click += new System.EventHandler(this.monoFlat_SocialButton2_Click);
+            // 
+            // monoFlat_HeaderLabel1
+            // 
+            this.monoFlat_HeaderLabel1.AutoSize = true;
+            this.monoFlat_HeaderLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_HeaderLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.monoFlat_HeaderLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.monoFlat_HeaderLabel1.Location = new System.Drawing.Point(205, 45);
+            this.monoFlat_HeaderLabel1.Name = "monoFlat_HeaderLabel1";
+            this.monoFlat_HeaderLabel1.Size = new System.Drawing.Size(64, 20);
+            this.monoFlat_HeaderLabel1.TabIndex = 4;
+            this.monoFlat_HeaderLabel1.Text = "Options";
+            this.monoFlat_HeaderLabel1.Click += new System.EventHandler(this.monoFlat_HeaderLabel1_Click);
             // 
             // monoFlat_Button10
             // 
@@ -515,16 +568,6 @@
             this.openFileDialog6.Filter = "Skybox up texture|*up.vtf|VTF Files|*.vtf";
             this.openFileDialog6.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog6_FileOk);
             // 
-            // monoFlat_SocialButton1
-            // 
-            this.monoFlat_SocialButton1.Image = global::TextureConverter.Properties.Resources.GitHub_Mark_Light_64px;
-            this.monoFlat_SocialButton1.Location = new System.Drawing.Point(631, 13);
-            this.monoFlat_SocialButton1.Name = "monoFlat_SocialButton1";
-            this.monoFlat_SocialButton1.Size = new System.Drawing.Size(85, 85);
-            this.monoFlat_SocialButton1.TabIndex = 2;
-            this.monoFlat_SocialButton1.Text = "monoFlat_SocialButton1";
-            this.monoFlat_SocialButton1.Click += new System.EventHandler(this.monoFlat_SocialButton1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,6 +582,7 @@
             this.monoFlat_ThemeContainer1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.Main.ResumeLayout(false);
+            this.Main.PerformLayout();
             this.SkyboxAdv.ResumeLayout(false);
             this.SkyboxAdv.PerformLayout();
             this.ResumeLayout(false);
@@ -582,6 +626,9 @@
         private MonoFlat.MonoFlat_Button monoFlat_Button9;
         private MonoFlat.MonoFlat_Button monoFlat_Button10;
         private MonoFlat.MonoFlat_SocialButton monoFlat_SocialButton1;
+        private MonoFlat.MonoFlat_HeaderLabel monoFlat_HeaderLabel2;
+        private MonoFlat.MonoFlat_HeaderLabel monoFlat_HeaderLabel1;
+        private MonoFlat.MonoFlat_SocialButton monoFlat_SocialButton2;
     }
 }
 

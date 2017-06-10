@@ -7,6 +7,7 @@ namespace TextureConverter
 {
     public partial class Form1 : Form
     {
+        public static bool alwaysLog = false;
         public Form1()
         {
             InitializeComponent();
@@ -88,6 +89,28 @@ namespace TextureConverter
             MessageBox.Show("This feature is still work in progress");
         }
 
+        private void monoFlat_SocialButton1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Fam0r/TextureConverter/");
+        }
+
+        private void monoFlat_HeaderLabel2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Fam0r/TextureConverter/");
+        }
+
+        private void monoFlat_SocialButton2_Click(object sender, EventArgs e)
+        {
+            Options opt = new Options();
+            opt.Show();
+        }
+
+        private void monoFlat_HeaderLabel1_Click(object sender, EventArgs e)
+        {
+            Options opt = new Options();
+            opt.Show();
+        }
+
         private void monoFlat_Button8_Click(object sender, EventArgs e)
         {
             try {
@@ -101,7 +124,7 @@ namespace TextureConverter
                 notify("error", ee.Message);
                 return;
             }
-            notify("notice", "Starting the convertion process...");
+            notify("notice", "Converting...");
             string[] files = {
                 bk.Text,
                 dn.Text,
@@ -110,7 +133,7 @@ namespace TextureConverter
                 rt.Text,
                 up.Text
             };
-            if (ConvertCSS.Convert(files)) notify("success", "Skybox successfully converted");
+            if (ConvertCSS.Convert(files)) notify("success", "Skybox successfully converted to " + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "output"));
             else notify("error", "Something went wrong while converting skybox! A log file has been written to " + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logs.txt"));
         }
 
@@ -124,11 +147,6 @@ namespace TextureConverter
 
             monoFlat_NotificationBox1.Visible = true;
             return;
-        }
-
-        private void monoFlat_SocialButton1_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/Fam0r/TextureConverter/");
         }
     }
 }
