@@ -30,8 +30,10 @@
             this.monoFlat_ThemeContainer1 = new MonoFlat.MonoFlat_ThemeContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Main = new System.Windows.Forms.TabPage();
+            this.monoFlat_Button10 = new MonoFlat.MonoFlat_Button();
             this.monoFlat_Button1 = new MonoFlat.MonoFlat_Button();
             this.SkyboxAdv = new System.Windows.Forms.TabPage();
+            this.monoFlat_Button9 = new MonoFlat.MonoFlat_Button();
             this.monoFlat_NotificationBox1 = new MonoFlat.MonoFlat_NotificationBox();
             this.monoFlat_Button8 = new MonoFlat.MonoFlat_Button();
             this.monoFlat_Button7 = new MonoFlat.MonoFlat_Button();
@@ -52,7 +54,6 @@
             this.monoFlat_Label2 = new MonoFlat.MonoFlat_Label();
             this.monoFlat_Label1 = new MonoFlat.MonoFlat_Label();
             this.bk = new MonoFlat.MonoFlat_TextBox();
-            this.monoFlat_RadioButton1 = new MonoFlat.MonoFlat_RadioButton();
             this.monoFlat_ControlBox1 = new MonoFlat.MonoFlat_ControlBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
@@ -60,6 +61,7 @@
             this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog5 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog6 = new System.Windows.Forms.OpenFileDialog();
+            this.monoFlat_SocialButton1 = new MonoFlat.MonoFlat_SocialButton();
             this.monoFlat_ThemeContainer1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
@@ -97,11 +99,27 @@
             // Main
             // 
             this.Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.Main.Controls.Add(this.monoFlat_SocialButton1);
+            this.Main.Controls.Add(this.monoFlat_Button10);
             this.Main.Controls.Add(this.monoFlat_Button1);
             this.Main.Location = new System.Drawing.Point(4, 24);
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(735, 412);
             this.Main.TabIndex = 1;
+            // 
+            // monoFlat_Button10
+            // 
+            this.monoFlat_Button10.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Button10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_Button10.Image = null;
+            this.monoFlat_Button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_Button10.Location = new System.Drawing.Point(425, 313);
+            this.monoFlat_Button10.Name = "monoFlat_Button10";
+            this.monoFlat_Button10.Size = new System.Drawing.Size(290, 80);
+            this.monoFlat_Button10.TabIndex = 1;
+            this.monoFlat_Button10.Text = "Modern Minecraft texture converter (W.I.P)";
+            this.monoFlat_Button10.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_Button10.Click += new System.EventHandler(this.monoFlat_Button10_Click);
             // 
             // monoFlat_Button1
             // 
@@ -109,17 +127,18 @@
             this.monoFlat_Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button1.Image = null;
             this.monoFlat_Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button1.Location = new System.Drawing.Point(113, 238);
+            this.monoFlat_Button1.Location = new System.Drawing.Point(115, 313);
             this.monoFlat_Button1.Name = "monoFlat_Button1";
-            this.monoFlat_Button1.Size = new System.Drawing.Size(602, 155);
+            this.monoFlat_Button1.Size = new System.Drawing.Size(304, 80);
             this.monoFlat_Button1.TabIndex = 0;
-            this.monoFlat_Button1.Text = "Skybox Converter";
+            this.monoFlat_Button1.Text = "Counter Strike Source Skybox Converter";
             this.monoFlat_Button1.TextAlignment = System.Drawing.StringAlignment.Center;
             this.monoFlat_Button1.Click += new System.EventHandler(this.monoFlat_Button1_Click);
             // 
             // SkyboxAdv
             // 
             this.SkyboxAdv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.SkyboxAdv.Controls.Add(this.monoFlat_Button9);
             this.SkyboxAdv.Controls.Add(this.monoFlat_NotificationBox1);
             this.SkyboxAdv.Controls.Add(this.monoFlat_Button8);
             this.SkyboxAdv.Controls.Add(this.monoFlat_Button7);
@@ -140,12 +159,25 @@
             this.SkyboxAdv.Controls.Add(this.monoFlat_Label2);
             this.SkyboxAdv.Controls.Add(this.monoFlat_Label1);
             this.SkyboxAdv.Controls.Add(this.bk);
-            this.SkyboxAdv.Controls.Add(this.monoFlat_RadioButton1);
             this.SkyboxAdv.Location = new System.Drawing.Point(4, 24);
             this.SkyboxAdv.Name = "SkyboxAdv";
             this.SkyboxAdv.Padding = new System.Windows.Forms.Padding(3);
             this.SkyboxAdv.Size = new System.Drawing.Size(735, 412);
             this.SkyboxAdv.TabIndex = 0;
+            // 
+            // monoFlat_Button9
+            // 
+            this.monoFlat_Button9.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Button9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.monoFlat_Button9.Image = null;
+            this.monoFlat_Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.monoFlat_Button9.Location = new System.Drawing.Point(475, 350);
+            this.monoFlat_Button9.Name = "monoFlat_Button9";
+            this.monoFlat_Button9.Size = new System.Drawing.Size(241, 43);
+            this.monoFlat_Button9.TabIndex = 21;
+            this.monoFlat_Button9.Text = "Go back";
+            this.monoFlat_Button9.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.monoFlat_Button9.Click += new System.EventHandler(this.monoFlat_Button9_Click);
             // 
             // monoFlat_NotificationBox1
             // 
@@ -169,9 +201,9 @@
             this.monoFlat_Button8.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button8.Image = null;
             this.monoFlat_Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button8.Location = new System.Drawing.Point(475, 326);
+            this.monoFlat_Button8.Location = new System.Drawing.Point(474, 295);
             this.monoFlat_Button8.Name = "monoFlat_Button8";
-            this.monoFlat_Button8.Size = new System.Drawing.Size(241, 67);
+            this.monoFlat_Button8.Size = new System.Drawing.Size(241, 49);
             this.monoFlat_Button8.TabIndex = 19;
             this.monoFlat_Button8.Text = "Convert";
             this.monoFlat_Button8.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -435,16 +467,6 @@
             this.bk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.bk.UseSystemPasswordChar = false;
             // 
-            // monoFlat_RadioButton1
-            // 
-            this.monoFlat_RadioButton1.Checked = false;
-            this.monoFlat_RadioButton1.Location = new System.Drawing.Point(114, 6);
-            this.monoFlat_RadioButton1.Name = "monoFlat_RadioButton1";
-            this.monoFlat_RadioButton1.Size = new System.Drawing.Size(98, 17);
-            this.monoFlat_RadioButton1.TabIndex = 0;
-            this.monoFlat_RadioButton1.Text = "CS:S Skybox";
-            this.monoFlat_RadioButton1.CheckedChanged += new MonoFlat.MonoFlat_RadioButton.CheckedChangedEventHandler(this.monoFlat_RadioButton1_CheckedChanged);
-            // 
             // monoFlat_ControlBox1
             // 
             this.monoFlat_ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -493,6 +515,16 @@
             this.openFileDialog6.Filter = "Skybox up texture|*up.vtf|VTF Files|*.vtf";
             this.openFileDialog6.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog6_FileOk);
             // 
+            // monoFlat_SocialButton1
+            // 
+            this.monoFlat_SocialButton1.Image = global::TextureConverter.Properties.Resources.GitHub_Mark_Light_64px;
+            this.monoFlat_SocialButton1.Location = new System.Drawing.Point(631, 13);
+            this.monoFlat_SocialButton1.Name = "monoFlat_SocialButton1";
+            this.monoFlat_SocialButton1.Size = new System.Drawing.Size(85, 85);
+            this.monoFlat_SocialButton1.TabIndex = 2;
+            this.monoFlat_SocialButton1.Text = "monoFlat_SocialButton1";
+            this.monoFlat_SocialButton1.Click += new System.EventHandler(this.monoFlat_SocialButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,7 +553,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Main;
         private MonoFlat.MonoFlat_Button monoFlat_Button1;
-        private MonoFlat.MonoFlat_RadioButton monoFlat_RadioButton1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private MonoFlat.MonoFlat_Button monoFlat_Button8;
         private MonoFlat.MonoFlat_Button monoFlat_Button7;
@@ -548,6 +579,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog5;
         private System.Windows.Forms.OpenFileDialog openFileDialog6;
         private MonoFlat.MonoFlat_NotificationBox monoFlat_NotificationBox1;
+        private MonoFlat.MonoFlat_Button monoFlat_Button9;
+        private MonoFlat.MonoFlat_Button monoFlat_Button10;
+        private MonoFlat.MonoFlat_SocialButton monoFlat_SocialButton1;
     }
 }
 
