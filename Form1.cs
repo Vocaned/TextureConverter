@@ -24,13 +24,6 @@ namespace TextureConverter
         public Form1()
         {
             InitializeComponent();
-            if (advanced) {
-                monoFlat_Label9.Visible = true;
-                monoFlat_Label10.Visible = true;
-                monoFlat_Label11.Visible = true;
-                comboBox2.Visible = true;
-                comboBox3.Visible = true;
-            }
         }
 
         private void monoFlat_Button1_Click(object sender, EventArgs e)
@@ -497,6 +490,23 @@ namespace TextureConverter
             if (lf != null) lf.Dispose();
             if (rt != null) rt.Dispose();
             if (up != null) up.Dispose();
+        }
+
+        private void tabControl1_TabIndexChanged(object sender, EventArgs e)
+        {
+            if (advanced) {
+                monoFlat_Label9.Visible = true;
+                monoFlat_Label10.Visible = true;
+                monoFlat_Label11.Visible = true;
+                comboBox2.Visible = true;
+                comboBox3.Visible = true;
+            } else {
+                monoFlat_Label9.Visible = false;
+                monoFlat_Label10.Visible = false;
+                monoFlat_Label11.Visible = false;
+                comboBox2.Visible = false;
+                comboBox3.Visible = false;
+            }
         }
     }
 }
