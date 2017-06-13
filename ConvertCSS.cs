@@ -40,7 +40,8 @@ namespace TextureConverter
                 }
 
                 Logger("Started converting files");
-                Bitmap outp = CombineBitmap(newfiles);
+                Bitmap outp = CombineBitmap(newfiles, Form1.rotmodetop, Form1.rotmodebottom);
+
                 Logger("Converted files, saving skybox.png");
 
                 string output = Path.Combine(outputFolder, "skybox.png");
@@ -75,7 +76,7 @@ namespace TextureConverter
             return;
         }
 
-        public static Bitmap CombineBitmap(string[] files)
+        public static Bitmap CombineBitmap(string[] files, RotateFlipType top, RotateFlipType bottom)
         {
             //read all images into memory
             List<Bitmap> images = new List<Bitmap>();
@@ -109,8 +110,8 @@ namespace TextureConverter
                     g.Clear(Color.Fuchsia);
 
                     //go through each image and draw it on the final image
-                    images[5].RotateFlip(RotateFlipType.Rotate90FlipXY);
-                    images[1].RotateFlip(RotateFlipType.Rotate270FlipX);
+                    images[5].RotateFlip(top);
+                    images[1].RotateFlip(bottom);
 
                     //Probably shouldn't hardcode these but whatever, I'll fix later if needed
                     g.DrawImage(images[5], new Rectangle(images[5].Width, 0, images[5].Width, images[5].Height));

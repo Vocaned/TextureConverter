@@ -34,7 +34,7 @@ namespace TextureConverter
                     index++;
                 }
                 ConvertCSS.Logger(newfiles[0]);
-                Bitmap outp = ConvertCSS.CombineBitmap(newfiles);
+                Bitmap outp = ConvertCSS.CombineBitmap(newfiles, Form1.rotmodetop, Form1.rotmodebottom);
                 ConvertCSS.Logger("Converted files, saving skybox.png");
 
                 string output = Path.Combine(outputFolder, "skybox.png");

@@ -80,6 +80,11 @@
             this.openFileDialog5 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog6 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog7 = new System.Windows.Forms.OpenFileDialog();
+            this.monoFlat_Label9 = new MonoFlat.MonoFlat_Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.monoFlat_Label10 = new MonoFlat.MonoFlat_Label();
+            this.monoFlat_Label11 = new MonoFlat.MonoFlat_Label();
             this.monoFlat_ThemeContainer1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
@@ -207,6 +212,11 @@
             // SkyboxAdv
             // 
             this.SkyboxAdv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.SkyboxAdv.Controls.Add(this.monoFlat_Label11);
+            this.SkyboxAdv.Controls.Add(this.comboBox3);
+            this.SkyboxAdv.Controls.Add(this.monoFlat_Label10);
+            this.SkyboxAdv.Controls.Add(this.comboBox2);
+            this.SkyboxAdv.Controls.Add(this.monoFlat_Label9);
             this.SkyboxAdv.Controls.Add(this.monoFlat_HeaderLabel4);
             this.SkyboxAdv.Controls.Add(this.monoFlat_Button11);
             this.SkyboxAdv.Controls.Add(this.monoFlat_TextBox1);
@@ -783,6 +793,94 @@
             this.openFileDialog7.Filter = "Supported image file|*.png;*.jpg;*.gif;*.bmp;*.exif;*.tiff;*.tga";
             this.openFileDialog7.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog7_FileOk);
             // 
+            // monoFlat_Label9
+            // 
+            this.monoFlat_Label9.AutoSize = true;
+            this.monoFlat_Label9.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label9.Location = new System.Drawing.Point(160, 307);
+            this.monoFlat_Label9.Name = "monoFlat_Label9";
+            this.monoFlat_Label9.Size = new System.Drawing.Size(86, 15);
+            this.monoFlat_Label9.TabIndex = 46;
+            this.monoFlat_Label9.Text = "Top rotate/flip:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "RotateNoneFlipNone\t",
+            "Rotate180FlipNone\t",
+            "Rotate180FlipX\t",
+            "Rotate180FlipXY\t",
+            "Rotate180FlipY\t",
+            "Rotate270FlipNone\t",
+            "Rotate270FlipX\t",
+            "Rotate270FlipXY\t",
+            "Rotate270FlipY\t",
+            "Rotate90FlipNone\t",
+            "Rotate90FlipX\t",
+            "Rotate90FlipXY\t",
+            "Rotate90FlipY\t",
+            "RotateNoneFlipX\t",
+            "RotateNoneFlipXY\t",
+            "RotateNoneFlipY"});
+            this.comboBox2.Location = new System.Drawing.Point(165, 325);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(94, 23);
+            this.comboBox2.TabIndex = 47;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "RotateNoneFlipNone\t",
+            "Rotate180FlipNone\t",
+            "Rotate180FlipX\t",
+            "Rotate180FlipXY\t",
+            "Rotate180FlipY\t",
+            "Rotate270FlipNone\t",
+            "Rotate270FlipX\t",
+            "Rotate270FlipXY\t",
+            "Rotate270FlipY\t",
+            "Rotate90FlipNone\t",
+            "Rotate90FlipX\t",
+            "Rotate90FlipXY\t",
+            "Rotate90FlipY\t",
+            "RotateNoneFlipX\t",
+            "RotateNoneFlipXY\t",
+            "RotateNoneFlipY"});
+            this.comboBox3.Location = new System.Drawing.Point(300, 325);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(94, 23);
+            this.comboBox3.TabIndex = 49;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // monoFlat_Label10
+            // 
+            this.monoFlat_Label10.AutoSize = true;
+            this.monoFlat_Label10.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label10.Location = new System.Drawing.Point(297, 307);
+            this.monoFlat_Label10.Name = "monoFlat_Label10";
+            this.monoFlat_Label10.Size = new System.Drawing.Size(106, 15);
+            this.monoFlat_Label10.TabIndex = 48;
+            this.monoFlat_Label10.Text = "Bottom rotate/flip:";
+            // 
+            // monoFlat_Label11
+            // 
+            this.monoFlat_Label11.AutoSize = true;
+            this.monoFlat_Label11.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label11.Location = new System.Drawing.Point(108, 292);
+            this.monoFlat_Label11.Name = "monoFlat_Label11";
+            this.monoFlat_Label11.Size = new System.Drawing.Size(251, 15);
+            this.monoFlat_Label11.TabIndex = 50;
+            this.monoFlat_Label11.Text = "Don\'t change if you dont know what it does \\/";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -861,6 +959,11 @@
         private MonoFlat.MonoFlat_TextBox monoFlat_TextBox1;
         private MonoFlat.MonoFlat_Label monoFlat_Label8;
         private System.Windows.Forms.OpenFileDialog openFileDialog7;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private MonoFlat.MonoFlat_Label monoFlat_Label9;
+        private MonoFlat.MonoFlat_Label monoFlat_Label11;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private MonoFlat.MonoFlat_Label monoFlat_Label10;
     }
 }
 

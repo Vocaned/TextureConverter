@@ -17,6 +17,8 @@ namespace TextureConverter
         Bitmap lf;
         Bitmap rt;
         Bitmap up;
+        public static RotateFlipType rotmodetop = RotateFlipType.RotateNoneFlipNone;
+        public static RotateFlipType rotmodebottom = RotateFlipType.RotateNoneFlipNone;
 
         public Form1()
         {
@@ -200,7 +202,50 @@ namespace TextureConverter
 
         private void monoFlat_Button11_Click(object sender, EventArgs e)
         {
+        }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            #region index spam
+            if (comboBox2.SelectedIndex == 0) rotmodetop = RotateFlipType.RotateNoneFlipNone;
+            else if (comboBox2.SelectedIndex == 1) rotmodetop = RotateFlipType.Rotate180FlipNone;
+            else if (comboBox2.SelectedIndex == 2) rotmodetop = RotateFlipType.Rotate180FlipX;
+            else if (comboBox2.SelectedIndex == 3) rotmodetop = RotateFlipType.Rotate180FlipXY;
+            else if (comboBox2.SelectedIndex == 4) rotmodetop = RotateFlipType.Rotate180FlipY;
+            else if (comboBox2.SelectedIndex == 5) rotmodetop = RotateFlipType.Rotate270FlipNone;
+            else if (comboBox2.SelectedIndex == 6) rotmodetop = RotateFlipType.Rotate270FlipX;
+            else if (comboBox2.SelectedIndex == 7) rotmodetop = RotateFlipType.Rotate270FlipXY;
+            else if (comboBox2.SelectedIndex == 8) rotmodetop = RotateFlipType.Rotate270FlipY;
+            else if (comboBox2.SelectedIndex == 9) rotmodetop = RotateFlipType.Rotate90FlipNone;
+            else if (comboBox2.SelectedIndex == 10) rotmodetop = RotateFlipType.Rotate90FlipX;
+            else if (comboBox2.SelectedIndex == 11) rotmodetop = RotateFlipType.Rotate90FlipXY;
+            else if (comboBox2.SelectedIndex == 12) rotmodetop = RotateFlipType.Rotate90FlipY;
+            else if (comboBox2.SelectedIndex == 13) rotmodetop = RotateFlipType.RotateNoneFlipX;
+            else if (comboBox2.SelectedIndex == 14) rotmodetop = RotateFlipType.RotateNoneFlipXY;
+            else if (comboBox2.SelectedIndex == 15) rotmodetop = RotateFlipType.RotateNoneFlipY;
+            #endregion
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            #region index spam
+            if (comboBox3.SelectedIndex == 0) rotmodebottom = RotateFlipType.RotateNoneFlipNone;
+            else if (comboBox3.SelectedIndex == 1) rotmodebottom = RotateFlipType.Rotate180FlipNone;
+            else if (comboBox3.SelectedIndex == 2) rotmodebottom = RotateFlipType.Rotate180FlipX;
+            else if (comboBox3.SelectedIndex == 3) rotmodebottom = RotateFlipType.Rotate180FlipXY;
+            else if (comboBox3.SelectedIndex == 4) rotmodebottom = RotateFlipType.Rotate180FlipY;
+            else if (comboBox3.SelectedIndex == 5) rotmodebottom = RotateFlipType.Rotate270FlipNone;
+            else if (comboBox3.SelectedIndex == 6) rotmodebottom = RotateFlipType.Rotate270FlipX;
+            else if (comboBox3.SelectedIndex == 7) rotmodebottom = RotateFlipType.Rotate270FlipXY;
+            else if (comboBox3.SelectedIndex == 8) rotmodebottom = RotateFlipType.Rotate270FlipY;
+            else if (comboBox3.SelectedIndex == 9) rotmodebottom = RotateFlipType.Rotate90FlipNone;
+            else if (comboBox3.SelectedIndex == 10) rotmodebottom = RotateFlipType.Rotate90FlipX;
+            else if (comboBox3.SelectedIndex == 11) rotmodebottom = RotateFlipType.Rotate90FlipXY;
+            else if (comboBox3.SelectedIndex == 12) rotmodebottom = RotateFlipType.Rotate90FlipY;
+            else if (comboBox3.SelectedIndex == 13) rotmodebottom = RotateFlipType.RotateNoneFlipX;
+            else if (comboBox3.SelectedIndex == 14) rotmodebottom = RotateFlipType.RotateNoneFlipXY;
+            else if (comboBox3.SelectedIndex == 15) rotmodebottom = RotateFlipType.RotateNoneFlipY;
+            #endregion
         }
 
         private void monoFlat_Button8_Click(object sender, EventArgs e)
@@ -313,6 +358,9 @@ namespace TextureConverter
                 monoFlat_TextBox1.Visible = false;
                 monoFlat_Label8.Visible = false;
                 monoFlat_Button11.Visible = false;
+                //other
+                comboBox2.SelectedIndex = 11;
+                comboBox3.SelectedIndex = 6;
                 #endregion
             } /*else if (comboBox1.SelectedIndex == 2) {
                 mode = "3x2";
@@ -373,6 +421,9 @@ namespace TextureConverter
                 monoFlat_TextBox1.Visible = true;
                 monoFlat_Label8.Visible = true; ;
                 monoFlat_Button11.Visible = true;
+                //other
+                comboBox2.SelectedIndex = 0;
+                comboBox3.SelectedIndex = 0;
                 #endregion
             } else {
                 mode = "none";
