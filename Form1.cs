@@ -492,7 +492,7 @@ namespace TextureConverter
             if (up != null) up.Dispose();
         }
 
-        private void tabControl1_TabIndexChanged(object sender, EventArgs e)
+        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
             if (advanced) {
                 monoFlat_Label9.Visible = true;
