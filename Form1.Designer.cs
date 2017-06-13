@@ -37,6 +37,11 @@
             this.monoFlat_Button10 = new MonoFlat.MonoFlat_Button();
             this.monoFlat_Button1 = new MonoFlat.MonoFlat_Button();
             this.SkyboxAdv = new System.Windows.Forms.TabPage();
+            this.monoFlat_Label11 = new MonoFlat.MonoFlat_Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.monoFlat_Label10 = new MonoFlat.MonoFlat_Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.monoFlat_Label9 = new MonoFlat.MonoFlat_Label();
             this.monoFlat_HeaderLabel4 = new MonoFlat.MonoFlat_HeaderLabel();
             this.monoFlat_Button11 = new MonoFlat.MonoFlat_Button();
             this.monoFlat_TextBox1 = new MonoFlat.MonoFlat_TextBox();
@@ -80,11 +85,6 @@
             this.openFileDialog5 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog6 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog7 = new System.Windows.Forms.OpenFileDialog();
-            this.monoFlat_Label9 = new MonoFlat.MonoFlat_Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.monoFlat_Label10 = new MonoFlat.MonoFlat_Label();
-            this.monoFlat_Label11 = new MonoFlat.MonoFlat_Label();
             this.monoFlat_ThemeContainer1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
@@ -252,6 +252,99 @@
             this.SkyboxAdv.Size = new System.Drawing.Size(735, 483);
             this.SkyboxAdv.TabIndex = 0;
             // 
+            // monoFlat_Label11
+            // 
+            this.monoFlat_Label11.AutoSize = true;
+            this.monoFlat_Label11.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label11.Location = new System.Drawing.Point(108, 292);
+            this.monoFlat_Label11.Name = "monoFlat_Label11";
+            this.monoFlat_Label11.Size = new System.Drawing.Size(251, 15);
+            this.monoFlat_Label11.TabIndex = 50;
+            this.monoFlat_Label11.Text = "Don\'t change if you dont know what it does \\/";
+            this.monoFlat_Label11.Visible = false;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "RotateNoneFlipNone\t",
+            "Rotate180FlipNone\t",
+            "Rotate180FlipX\t",
+            "Rotate180FlipXY\t",
+            "Rotate180FlipY\t",
+            "Rotate270FlipNone\t",
+            "Rotate270FlipX\t",
+            "Rotate270FlipXY\t",
+            "Rotate270FlipY\t",
+            "Rotate90FlipNone\t",
+            "Rotate90FlipX\t",
+            "Rotate90FlipXY\t",
+            "Rotate90FlipY\t",
+            "RotateNoneFlipX\t",
+            "RotateNoneFlipXY\t",
+            "RotateNoneFlipY"});
+            this.comboBox3.Location = new System.Drawing.Point(300, 325);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(94, 23);
+            this.comboBox3.TabIndex = 49;
+            this.comboBox3.Visible = false;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // monoFlat_Label10
+            // 
+            this.monoFlat_Label10.AutoSize = true;
+            this.monoFlat_Label10.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label10.Location = new System.Drawing.Point(297, 307);
+            this.monoFlat_Label10.Name = "monoFlat_Label10";
+            this.monoFlat_Label10.Size = new System.Drawing.Size(106, 15);
+            this.monoFlat_Label10.TabIndex = 48;
+            this.monoFlat_Label10.Text = "Bottom rotate/flip:";
+            this.monoFlat_Label10.Visible = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "RotateNoneFlipNone\t",
+            "Rotate180FlipNone\t",
+            "Rotate180FlipX\t",
+            "Rotate180FlipXY\t",
+            "Rotate180FlipY\t",
+            "Rotate270FlipNone\t",
+            "Rotate270FlipX\t",
+            "Rotate270FlipXY\t",
+            "Rotate270FlipY\t",
+            "Rotate90FlipNone\t",
+            "Rotate90FlipX\t",
+            "Rotate90FlipXY\t",
+            "Rotate90FlipY\t",
+            "RotateNoneFlipX\t",
+            "RotateNoneFlipXY\t",
+            "RotateNoneFlipY"});
+            this.comboBox2.Location = new System.Drawing.Point(165, 325);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(94, 23);
+            this.comboBox2.TabIndex = 47;
+            this.comboBox2.Visible = false;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // monoFlat_Label9
+            // 
+            this.monoFlat_Label9.AutoSize = true;
+            this.monoFlat_Label9.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label9.Location = new System.Drawing.Point(160, 307);
+            this.monoFlat_Label9.Name = "monoFlat_Label9";
+            this.monoFlat_Label9.Size = new System.Drawing.Size(86, 15);
+            this.monoFlat_Label9.TabIndex = 46;
+            this.monoFlat_Label9.Text = "Top rotate/flip:";
+            this.monoFlat_Label9.Visible = false;
+            // 
             // monoFlat_HeaderLabel4
             // 
             this.monoFlat_HeaderLabel4.AutoSize = true;
@@ -293,7 +386,7 @@
             this.monoFlat_TextBox1.ReadOnly = true;
             this.monoFlat_TextBox1.Size = new System.Drawing.Size(136, 41);
             this.monoFlat_TextBox1.TabIndex = 43;
-            this.monoFlat_TextBox1.Text = "Not available yet";
+            this.monoFlat_TextBox1.Text = "Work in progress";
             this.monoFlat_TextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.monoFlat_TextBox1.UseSystemPasswordChar = false;
             this.monoFlat_TextBox1.Visible = false;
@@ -330,7 +423,7 @@
             this.monoFlat_Label7.BackColor = System.Drawing.Color.Transparent;
             this.monoFlat_Label7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_Label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label7.Location = new System.Drawing.Point(491, 307);
+            this.monoFlat_Label7.Location = new System.Drawing.Point(491, 166);
             this.monoFlat_Label7.Name = "monoFlat_Label7";
             this.monoFlat_Label7.Size = new System.Drawing.Size(18, 15);
             this.monoFlat_Label7.TabIndex = 40;
@@ -343,7 +436,7 @@
             this.monoFlat_Label6.BackColor = System.Drawing.Color.Transparent;
             this.monoFlat_Label6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_Label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label6.Location = new System.Drawing.Point(491, 260);
+            this.monoFlat_Label6.Location = new System.Drawing.Point(491, 307);
             this.monoFlat_Label6.Name = "monoFlat_Label6";
             this.monoFlat_Label6.Size = new System.Drawing.Size(24, 15);
             this.monoFlat_Label6.TabIndex = 39;
@@ -356,7 +449,7 @@
             this.monoFlat_Label5.BackColor = System.Drawing.Color.Transparent;
             this.monoFlat_Label5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label5.Location = new System.Drawing.Point(491, 214);
+            this.monoFlat_Label5.Location = new System.Drawing.Point(491, 261);
             this.monoFlat_Label5.Name = "monoFlat_Label5";
             this.monoFlat_Label5.Size = new System.Drawing.Size(18, 15);
             this.monoFlat_Label5.TabIndex = 38;
@@ -369,7 +462,7 @@
             this.monoFlat_Label4.BackColor = System.Drawing.Color.Transparent;
             this.monoFlat_Label4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label4.Location = new System.Drawing.Point(491, 166);
+            this.monoFlat_Label4.Location = new System.Drawing.Point(491, 213);
             this.monoFlat_Label4.Name = "monoFlat_Label4";
             this.monoFlat_Label4.Size = new System.Drawing.Size(17, 15);
             this.monoFlat_Label4.TabIndex = 37;
@@ -408,7 +501,7 @@
             this.monoFlat_Button7.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button7.Image = null;
             this.monoFlat_Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button7.Location = new System.Drawing.Point(662, 294);
+            this.monoFlat_Button7.Location = new System.Drawing.Point(663, 294);
             this.monoFlat_Button7.Name = "monoFlat_Button7";
             this.monoFlat_Button7.Size = new System.Drawing.Size(53, 41);
             this.monoFlat_Button7.TabIndex = 35;
@@ -453,7 +546,7 @@
             this.monoFlat_Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.monoFlat_Button4.Image = null;
             this.monoFlat_Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.monoFlat_Button4.Location = new System.Drawing.Point(662, 153);
+            this.monoFlat_Button4.Location = new System.Drawing.Point(663, 153);
             this.monoFlat_Button4.Name = "monoFlat_Button4";
             this.monoFlat_Button4.Size = new System.Drawing.Size(53, 41);
             this.monoFlat_Button4.TabIndex = 32;
@@ -468,7 +561,7 @@
             this.css_ft.Font = new System.Drawing.Font("Tahoma", 11F);
             this.css_ft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(183)))), ((int)(((byte)(191)))));
             this.css_ft.Image = null;
-            this.css_ft.Location = new System.Drawing.Point(520, 294);
+            this.css_ft.Location = new System.Drawing.Point(520, 153);
             this.css_ft.MaxLength = 32767;
             this.css_ft.Multiline = false;
             this.css_ft.Name = "css_ft";
@@ -486,7 +579,7 @@
             this.css_up.Font = new System.Drawing.Font("Tahoma", 11F);
             this.css_up.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(183)))), ((int)(((byte)(191)))));
             this.css_up.Image = null;
-            this.css_up.Location = new System.Drawing.Point(520, 247);
+            this.css_up.Location = new System.Drawing.Point(520, 294);
             this.css_up.MaxLength = 32767;
             this.css_up.Multiline = false;
             this.css_up.Name = "css_up";
@@ -504,7 +597,7 @@
             this.css_rt.Font = new System.Drawing.Font("Tahoma", 11F);
             this.css_rt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(183)))), ((int)(((byte)(191)))));
             this.css_rt.Image = null;
-            this.css_rt.Location = new System.Drawing.Point(520, 200);
+            this.css_rt.Location = new System.Drawing.Point(520, 247);
             this.css_rt.MaxLength = 32767;
             this.css_rt.Multiline = false;
             this.css_rt.Name = "css_rt";
@@ -522,7 +615,7 @@
             this.css_lf.Font = new System.Drawing.Font("Tahoma", 11F);
             this.css_lf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(183)))), ((int)(((byte)(191)))));
             this.css_lf.Image = null;
-            this.css_lf.Location = new System.Drawing.Point(520, 153);
+            this.css_lf.Location = new System.Drawing.Point(520, 200);
             this.css_lf.MaxLength = 32767;
             this.css_lf.Multiline = false;
             this.css_lf.Name = "css_lf";
@@ -606,23 +699,24 @@
             this.monoFlat_Label1.BackColor = System.Drawing.Color.Transparent;
             this.monoFlat_Label1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.monoFlat_Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label1.Location = new System.Drawing.Point(475, 16);
+            this.monoFlat_Label1.Location = new System.Drawing.Point(479, 16);
             this.monoFlat_Label1.Name = "monoFlat_Label1";
-            this.monoFlat_Label1.Size = new System.Drawing.Size(42, 15);
+            this.monoFlat_Label1.Size = new System.Drawing.Size(35, 15);
             this.monoFlat_Label1.TabIndex = 0;
-            this.monoFlat_Label1.Text = "Preset:";
+            this.monoFlat_Label1.Text = "Type:";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
+            "Choose skybox type",
             "Counter Strike: Source",
             "Custom"});
             this.comboBox1.Location = new System.Drawing.Point(520, 13);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(195, 23);
             this.comboBox1.TabIndex = 23;
+            this.comboBox1.Text = "Choose skybox type";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // monoFlat_Panel1
@@ -792,94 +886,6 @@
             // 
             this.openFileDialog7.Filter = "Supported image file|*.png;*.jpg;*.gif;*.bmp;*.exif;*.tiff;*.tga";
             this.openFileDialog7.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog7_FileOk);
-            // 
-            // monoFlat_Label9
-            // 
-            this.monoFlat_Label9.AutoSize = true;
-            this.monoFlat_Label9.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_Label9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.monoFlat_Label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label9.Location = new System.Drawing.Point(160, 307);
-            this.monoFlat_Label9.Name = "monoFlat_Label9";
-            this.monoFlat_Label9.Size = new System.Drawing.Size(86, 15);
-            this.monoFlat_Label9.TabIndex = 46;
-            this.monoFlat_Label9.Text = "Top rotate/flip:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "RotateNoneFlipNone\t",
-            "Rotate180FlipNone\t",
-            "Rotate180FlipX\t",
-            "Rotate180FlipXY\t",
-            "Rotate180FlipY\t",
-            "Rotate270FlipNone\t",
-            "Rotate270FlipX\t",
-            "Rotate270FlipXY\t",
-            "Rotate270FlipY\t",
-            "Rotate90FlipNone\t",
-            "Rotate90FlipX\t",
-            "Rotate90FlipXY\t",
-            "Rotate90FlipY\t",
-            "RotateNoneFlipX\t",
-            "RotateNoneFlipXY\t",
-            "RotateNoneFlipY"});
-            this.comboBox2.Location = new System.Drawing.Point(165, 325);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(94, 23);
-            this.comboBox2.TabIndex = 47;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "RotateNoneFlipNone\t",
-            "Rotate180FlipNone\t",
-            "Rotate180FlipX\t",
-            "Rotate180FlipXY\t",
-            "Rotate180FlipY\t",
-            "Rotate270FlipNone\t",
-            "Rotate270FlipX\t",
-            "Rotate270FlipXY\t",
-            "Rotate270FlipY\t",
-            "Rotate90FlipNone\t",
-            "Rotate90FlipX\t",
-            "Rotate90FlipXY\t",
-            "Rotate90FlipY\t",
-            "RotateNoneFlipX\t",
-            "RotateNoneFlipXY\t",
-            "RotateNoneFlipY"});
-            this.comboBox3.Location = new System.Drawing.Point(300, 325);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(94, 23);
-            this.comboBox3.TabIndex = 49;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            // 
-            // monoFlat_Label10
-            // 
-            this.monoFlat_Label10.AutoSize = true;
-            this.monoFlat_Label10.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_Label10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.monoFlat_Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label10.Location = new System.Drawing.Point(297, 307);
-            this.monoFlat_Label10.Name = "monoFlat_Label10";
-            this.monoFlat_Label10.Size = new System.Drawing.Size(106, 15);
-            this.monoFlat_Label10.TabIndex = 48;
-            this.monoFlat_Label10.Text = "Bottom rotate/flip:";
-            // 
-            // monoFlat_Label11
-            // 
-            this.monoFlat_Label11.AutoSize = true;
-            this.monoFlat_Label11.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_Label11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.monoFlat_Label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label11.Location = new System.Drawing.Point(108, 292);
-            this.monoFlat_Label11.Name = "monoFlat_Label11";
-            this.monoFlat_Label11.Size = new System.Drawing.Size(251, 15);
-            this.monoFlat_Label11.TabIndex = 50;
-            this.monoFlat_Label11.Text = "Don\'t change if you dont know what it does \\/";
             // 
             // Form1
             // 

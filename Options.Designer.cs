@@ -28,16 +28,20 @@
         private void InitializeComponent()
         {
             this.monoFlat_ThemeContainer1 = new MonoFlat.MonoFlat_ThemeContainer();
-            this.monoFlat_ControlBox1 = new MonoFlat.MonoFlat_ControlBox();
-            this.monoFlat_Button1 = new MonoFlat.MonoFlat_Button();
-            this.monoFlat_Toggle1 = new MonoFlat.MonoFlat_Toggle();
             this.monoFlat_Label1 = new MonoFlat.MonoFlat_Label();
+            this.monoFlat_Toggle1 = new MonoFlat.MonoFlat_Toggle();
+            this.monoFlat_Button1 = new MonoFlat.MonoFlat_Button();
+            this.monoFlat_ControlBox1 = new MonoFlat.MonoFlat_ControlBox();
+            this.monoFlat_Label2 = new MonoFlat.MonoFlat_Label();
+            this.monoFlat_Toggle2 = new MonoFlat.MonoFlat_Toggle();
             this.monoFlat_ThemeContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // monoFlat_ThemeContainer1
             // 
             this.monoFlat_ThemeContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Label2);
+            this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Toggle2);
             this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Label1);
             this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Toggle1);
             this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Button1);
@@ -49,23 +53,33 @@
             this.monoFlat_ThemeContainer1.Padding = new System.Windows.Forms.Padding(10, 70, 10, 9);
             this.monoFlat_ThemeContainer1.RoundCorners = true;
             this.monoFlat_ThemeContainer1.Sizable = true;
-            this.monoFlat_ThemeContainer1.Size = new System.Drawing.Size(387, 133);
+            this.monoFlat_ThemeContainer1.Size = new System.Drawing.Size(387, 186);
             this.monoFlat_ThemeContainer1.SmartBounds = true;
             this.monoFlat_ThemeContainer1.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
             this.monoFlat_ThemeContainer1.TabIndex = 0;
             this.monoFlat_ThemeContainer1.Text = "Options";
             // 
-            // monoFlat_ControlBox1
+            // monoFlat_Label1
             // 
-            this.monoFlat_ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.monoFlat_ControlBox1.EnableHoverHighlight = false;
-            this.monoFlat_ControlBox1.EnableMaximizeButton = true;
-            this.monoFlat_ControlBox1.EnableMinimizeButton = true;
-            this.monoFlat_ControlBox1.Location = new System.Drawing.Point(275, 12);
-            this.monoFlat_ControlBox1.Name = "monoFlat_ControlBox1";
-            this.monoFlat_ControlBox1.Size = new System.Drawing.Size(100, 25);
-            this.monoFlat_ControlBox1.TabIndex = 0;
-            this.monoFlat_ControlBox1.Text = "monoFlat_ControlBox1";
+            this.monoFlat_Label1.AutoSize = true;
+            this.monoFlat_Label1.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label1.Location = new System.Drawing.Point(123, 90);
+            this.monoFlat_Label1.Name = "monoFlat_Label1";
+            this.monoFlat_Label1.Size = new System.Drawing.Size(169, 15);
+            this.monoFlat_Label1.TabIndex = 3;
+            this.monoFlat_Label1.Text = "Log even if errors dont happen";
+            // 
+            // monoFlat_Toggle1
+            // 
+            this.monoFlat_Toggle1.Location = new System.Drawing.Point(298, 81);
+            this.monoFlat_Toggle1.Name = "monoFlat_Toggle1";
+            this.monoFlat_Toggle1.Size = new System.Drawing.Size(76, 33);
+            this.monoFlat_Toggle1.TabIndex = 2;
+            this.monoFlat_Toggle1.Text = "monoFlat_Toggle1";
+            this.monoFlat_Toggle1.Toggled = false;
+            this.monoFlat_Toggle1.Type = MonoFlat.MonoFlat_Toggle._Type.CheckMark;
             // 
             // monoFlat_Button1
             // 
@@ -81,33 +95,46 @@
             this.monoFlat_Button1.TextAlignment = System.Drawing.StringAlignment.Center;
             this.monoFlat_Button1.Click += new System.EventHandler(this.monoFlat_Button1_Click);
             // 
-            // monoFlat_Toggle1
+            // monoFlat_ControlBox1
             // 
-            this.monoFlat_Toggle1.Location = new System.Drawing.Point(298, 81);
-            this.monoFlat_Toggle1.Name = "monoFlat_Toggle1";
-            this.monoFlat_Toggle1.Size = new System.Drawing.Size(76, 33);
-            this.monoFlat_Toggle1.TabIndex = 2;
-            this.monoFlat_Toggle1.Text = "monoFlat_Toggle1";
-            this.monoFlat_Toggle1.Toggled = false;
-            this.monoFlat_Toggle1.Type = MonoFlat.MonoFlat_Toggle._Type.CheckMark;
+            this.monoFlat_ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.monoFlat_ControlBox1.EnableHoverHighlight = false;
+            this.monoFlat_ControlBox1.EnableMaximizeButton = true;
+            this.monoFlat_ControlBox1.EnableMinimizeButton = true;
+            this.monoFlat_ControlBox1.Location = new System.Drawing.Point(275, 15);
+            this.monoFlat_ControlBox1.Name = "monoFlat_ControlBox1";
+            this.monoFlat_ControlBox1.Size = new System.Drawing.Size(100, 25);
+            this.monoFlat_ControlBox1.TabIndex = 0;
+            this.monoFlat_ControlBox1.Text = "monoFlat_ControlBox1";
             // 
-            // monoFlat_Label1
+            // monoFlat_Label2
             // 
-            this.monoFlat_Label1.AutoSize = true;
-            this.monoFlat_Label1.BackColor = System.Drawing.Color.Transparent;
-            this.monoFlat_Label1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.monoFlat_Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
-            this.monoFlat_Label1.Location = new System.Drawing.Point(123, 90);
-            this.monoFlat_Label1.Name = "monoFlat_Label1";
-            this.monoFlat_Label1.Size = new System.Drawing.Size(169, 15);
-            this.monoFlat_Label1.TabIndex = 3;
-            this.monoFlat_Label1.Text = "Log even if errors dont happen";
+            this.monoFlat_Label2.AutoSize = true;
+            this.monoFlat_Label2.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_Label2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.monoFlat_Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(125)))), ((int)(((byte)(132)))));
+            this.monoFlat_Label2.Location = new System.Drawing.Point(123, 129);
+            this.monoFlat_Label2.Name = "monoFlat_Label2";
+            this.monoFlat_Label2.Size = new System.Drawing.Size(94, 15);
+            this.monoFlat_Label2.TabIndex = 5;
+            this.monoFlat_Label2.Text = "Advanced mode";
+            // 
+            // monoFlat_Toggle2
+            // 
+            this.monoFlat_Toggle2.Location = new System.Drawing.Point(298, 120);
+            this.monoFlat_Toggle2.Name = "monoFlat_Toggle2";
+            this.monoFlat_Toggle2.Size = new System.Drawing.Size(76, 33);
+            this.monoFlat_Toggle2.TabIndex = 4;
+            this.monoFlat_Toggle2.Text = "monoFlat_Toggle2";
+            this.monoFlat_Toggle2.Toggled = false;
+            this.monoFlat_Toggle2.Type = MonoFlat.MonoFlat_Toggle._Type.CheckMark;
+            this.monoFlat_Toggle2.ToggledChanged += new MonoFlat.MonoFlat_Toggle.ToggledChangedEventHandler(this.monoFlat_Toggle2_ToggledChanged);
             // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 133);
+            this.ClientSize = new System.Drawing.Size(387, 186);
             this.Controls.Add(this.monoFlat_ThemeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Options";
@@ -127,5 +154,7 @@
         private MonoFlat.MonoFlat_ControlBox monoFlat_ControlBox1;
         private MonoFlat.MonoFlat_Label monoFlat_Label1;
         private MonoFlat.MonoFlat_Toggle monoFlat_Toggle1;
+        private MonoFlat.MonoFlat_Label monoFlat_Label2;
+        private MonoFlat.MonoFlat_Toggle monoFlat_Toggle2;
     }
 }

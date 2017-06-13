@@ -63,7 +63,7 @@ namespace TextureConverter
                 return true;
 
             } catch (Exception e) {
-                Logger("Program crashed!!!" + Environment.NewLine + e + Environment.NewLine + Environment.NewLine);
+                Logger("Program crashed!!!" + Environment.NewLine + e + Environment.NewLine + "Files:" + files[0] + " " + files[1] + " " + files[2] + " " + files[3] + " " + files[4] + " " + files[5] + Environment.NewLine);
                 File.AppendAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logs.txt"), logs);
                 return false;
             }

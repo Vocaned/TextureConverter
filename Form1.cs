@@ -9,6 +9,7 @@ namespace TextureConverter
     public partial class Form1 : Form
     {
         public static bool alwaysLog = false;
+        public static bool advanced = false;
         string mode = "none";
         int i = 0;
         Bitmap bk;
@@ -23,6 +24,13 @@ namespace TextureConverter
         public Form1()
         {
             InitializeComponent();
+            if (advanced) {
+                monoFlat_Label9.Visible = true;
+                monoFlat_Label10.Visible = true;
+                monoFlat_Label11.Visible = true;
+                comboBox2.Visible = true;
+                comboBox3.Visible = true;
+            }
         }
 
         private void monoFlat_Button1_Click(object sender, EventArgs e)
@@ -103,22 +111,22 @@ namespace TextureConverter
 
         private void openFileDialog3_FileOk(object sender, CancelEventArgs e)
         {
-            css_lf.Text = openFileDialog3.FileName;
+            css_ft.Text = openFileDialog3.FileName;
         }
 
         private void openFileDialog4_FileOk(object sender, CancelEventArgs e)
         {
-            css_rt.Text = openFileDialog4.FileName;
+            css_lf.Text = openFileDialog4.FileName;
         }
 
         private void openFileDialog5_FileOk(object sender, CancelEventArgs e)
         {
-            css_up.Text = openFileDialog5.FileName;
+            css_rt.Text = openFileDialog5.FileName;
         }
 
         private void openFileDialog6_FileOk(object sender, CancelEventArgs e)
         {
-            css_ft.Text = openFileDialog6.FileName;
+            css_up.Text = openFileDialog6.FileName;
         }
 
         private void openFileDialog7_FileOk(object sender, CancelEventArgs e)
@@ -145,21 +153,21 @@ namespace TextureConverter
                     dn = new Bitmap(file7);
                     panel6.BackgroundImage = dn;
                 } else if (i == 4) {
-                    css_lf.Text = openFileDialog7.FileName;
-                    lf = new Bitmap(file7);
-                    panel1.BackgroundImage = lf;
-                } else if (i == 5) {
-                    css_rt.Text = openFileDialog7.FileName;
-                    rt = new Bitmap(file7);
-                    panel3.BackgroundImage = rt;
-                } else if (i == 6) {
-                    css_up.Text = openFileDialog7.FileName;
-                    up = new Bitmap(file7);
-                    panel5.BackgroundImage = up;
-                } else if (i == 7) {
                     css_ft.Text = openFileDialog7.FileName;
                     ft = new Bitmap(file7);
                     panel4.BackgroundImage = ft;
+                } else if (i == 5) {
+                    css_lf.Text = openFileDialog7.FileName;
+                    lf = new Bitmap(file7);
+                    panel1.BackgroundImage = lf;
+                } else if (i == 6) {
+                    css_rt.Text = openFileDialog7.FileName;
+                    rt = new Bitmap(file7);
+                    panel3.BackgroundImage = rt;
+                } else if (i == 7) {
+                    css_up.Text = openFileDialog7.FileName;
+                    up = new Bitmap(file7);
+                    panel5.BackgroundImage = up;
                 } else {
                     notify("error", "Invalid index, please try again.");
                 }
@@ -361,6 +369,13 @@ namespace TextureConverter
                 //other
                 comboBox2.SelectedIndex = 11;
                 comboBox3.SelectedIndex = 6;
+                //panels
+                panel1.Visible = false;
+                panel2.Visible = false;
+                panel3.Visible = false;
+                panel4.Visible = false;
+                panel5.Visible = false;
+                panel6.Visible = false;
                 #endregion
             } /*else if (comboBox1.SelectedIndex == 2) {
                 mode = "3x2";
@@ -424,6 +439,13 @@ namespace TextureConverter
                 //other
                 comboBox2.SelectedIndex = 0;
                 comboBox3.SelectedIndex = 0;
+                //panels
+                panel1.Visible = true;
+                panel2.Visible = true;
+                panel3.Visible = true;
+                panel4.Visible = true;
+                panel5.Visible = true;
+                panel6.Visible = true;
                 #endregion
             } else {
                 mode = "none";
@@ -454,6 +476,13 @@ namespace TextureConverter
                 monoFlat_TextBox1.Visible = false;
                 monoFlat_Label8.Visible = false;
                 monoFlat_Button11.Visible = false;
+                //panels
+                panel1.Visible = false;
+                panel2.Visible = false;
+                panel3.Visible = false;
+                panel4.Visible = false;
+                panel5.Visible = false;
+                panel6.Visible = false;
                 #endregion
             }
 
