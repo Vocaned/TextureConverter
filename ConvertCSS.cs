@@ -9,7 +9,7 @@ namespace TextureConverter
 {
     class ConvertCSS
     {
-        static string logs;
+        public static string logs;
         public static bool Convert(string[] files)
         {
             try {
@@ -36,7 +36,6 @@ namespace TextureConverter
                 foreach (string filePath in files) {
                     Logger("Adding " + filePath + " to newfiles[" + index + "]");
                     newfiles[index] = Path.Combine(outputFolder, Path.GetFileNameWithoutExtension(filePath)) + ".png";
-                    Logger("Added " + filePath + " to newfiles[" + index + "]");
                     index++;
                 }
 
@@ -88,7 +87,12 @@ namespace TextureConverter
 
                 foreach (string image in files) {
                     //create a Bitmap from the file and add it to the list
-                    Bitmap bitmap = new Bitmap(image);
+                    Bitmap bitmap;
+                    if (Path.GetExtension(image) == ".tga") {
+                        bitmap = new Bitmap(Paloma.TargaImage.LoadTargaImage(image));
+                    } else {
+                        bitmap = new Bitmap(image);
+                    }
                     images.Add(bitmap);
                 }
 

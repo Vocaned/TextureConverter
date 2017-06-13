@@ -135,4 +135,7 @@
   <metadata name="openFileDialog6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>719, 20</value>
   </metadata>
+  <metadata name="openFileDialog7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>859, 20</value>
+  </metadata>
 </root>
